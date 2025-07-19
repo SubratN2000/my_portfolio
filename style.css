@@ -1197,6 +1197,13 @@ textarea.form-input::-webkit-realizer {
     transition: var(--transition1);
 }
 
+.resume-btn{
+    width: fit-content; 
+    position: absolute; 
+    right: 13px;
+    top: 30px; 
+    }
+
 .form-btn::before {
     content: '';
     position: absolute;
@@ -1519,6 +1526,13 @@ textarea.form-input::-webkit-realizer {
     .form-btn ion-icon {
         font-size: 18px;
     }
+
+    .resume-btn{
+    width: fit-content; 
+    position: absolute; 
+    right: 30px;
+    top: 30px; 
+    }
 }
 
 @media (min-width: 768px) {
@@ -1664,6 +1678,13 @@ textarea.form-input::-webkit-realizer {
 
     .blog-banner-box {
         height: 230px;
+    }
+
+    .resume-btn{
+    width: fit-content; 
+    position: absolute; 
+    right: 100px;
+    top: 100px; 
     }
 }
 
