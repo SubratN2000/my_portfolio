@@ -399,6 +399,7 @@ article.active {
 .social-item .social-link {
     color: var(--light-gray70);
     font-size: 18px;
+    transition: all 0.2s;
 }
 
 .social-item .social-link:hover {
@@ -450,7 +451,61 @@ article.active {
     color: var(--orange-yellow-crayola);
 }
 
+.avatar-box img {
+  opacity: 0;
+  transform: translateY(30px) scale(0.8);
+  animation: fadeZoomIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeZoomIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* Initial state for animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Final state when animated */
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /*ABOUT*/
+
+/* Initial state for animations */
+.fade-up-2 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Final state when animated */
+.fade-up-2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: add stagger effect for service items */
+.service-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.service-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .about .article-title {
     margin-bottom: 15px;
