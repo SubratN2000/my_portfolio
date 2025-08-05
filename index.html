@@ -11,35 +11,40 @@
 
 <body>
     <main>
-        <aside class="sidebar " data-sidebar>
+        <aside class="sidebar" data-sidebar>
             <div class="sidebar-info">
-                <figure class="avatar-box">
+
+                <figure class="avatar-box fade-up">
                     <img src="./images/my_pic.png" alt="avatar" width="80">
                 </figure>
 
                 <div class="info-content">
-                    <h1 class="name" title="Richard Hanrick">Subrat Pr. Nayak</h1>
-                    <p class="title">QA Test Engineer</p>
+                    <h1 class="name fade-up" title="Subrat Pr. Nayak">Subrat Pr. Nayak</h1>
+                    <p class="title fade-up">QA Test Engineer</p>
+
                     <ul class="social-list">
-                        <li class="social-item">
+                        <li class="social-item fade-up">
                             <a href="https://www.linkedin.com/in/subrat-nayak-2b9983370/" class="social-link"
                                 target="_blank">
                                 <ion-icon name="logo-linkedin"></ion-icon>
                             </a>
                         </li>
-                        <li class="social-item">
+                        <li class="social-item fade-up">
                             <a href="https://github.com/SubratN2000" class="social-link" target="_blank">
                                 <ion-icon name="logo-github"></ion-icon>
                             </a>
                         </li>
-                        <li class="social-item">
+                        <li class="social-item fade-up">
+                            <a href="mailto:nayaksubrat030247@gmail.com" class="social-link" target="_blank">
+                                <ion-icon name="mail"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="social-item fade-up">
                             <a href="https://wa.me/+916371773304" class="social-link" target="_blank">
                                 <ion-icon name="logo-whatsapp"></ion-icon>
                             </a>
                         </li>
                     </ul>
-
-
                 </div>
 
                 <button class="info-more-btn" data-sidebar-btn>
@@ -48,13 +53,9 @@
                 </button>
             </div>
 
-
-
-
             <div class="sidebar-info-more">
                 <div class="separator"></div>
-                <div class="assistant">
-                    <!-- <h3>Ask Me Anything</h3> -->
+                <div class="assistant fade-up">
                     <input type="text" name="fullname" class="form-input" placeholder="Ask Me Anything" required
                         data-form-input>
                     <br>
@@ -64,14 +65,15 @@
                     </button>
                     <br>
                     <li class="clients-item">
-                        <a href="#"><img
-                                src="https://static.vecteezy.com/system/resources/thumbnails/053/444/639/small_2x/hand-holding-megaphone-announcing-coming-soon-with-vibrant-orange-banner-illustration-png.png"
-                                alt="logo" style="max-width: 200px;"></a>
+                        <a href="#">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/053/444/639/small_2x/hand-holding-megaphone-announcing-coming-soon-with-vibrant-orange-banner-illustration-png.png"
+                                alt="logo" style="max-width: 200px;">
+                        </a>
                     </li>
                 </div>
-
             </div>
         </aside>
+
 
         <div class="main-content">
             <nav class="navbar">
@@ -86,10 +88,10 @@
 
             <article class="about active" data-page="about">
                 <header>
-                    <h2 class="h2 article-title">About me</h2>
+                    <h2 class="h2 article-title fade-up-2">About me</h2>
                 </header>
 
-                <section class="about-text">
+                <section class="about-text fade-up-2">
                     <p>I’m a Software Test Engineer with 3+ years of experience in Manual and Automation Testing,
                         ensuring high-quality software through meticulous testing and a passion for delivering flawless
                         user experiences.</p>
@@ -100,7 +102,7 @@
                 </section>
 
                 <section class="service">
-                    <h3 class="h3 service-title">What I'm doing</h3>
+                    <h3 class="h3 service-title fade-up-2">What I'm doing</h3>
 
                     <ul class="service-list">
                         <li class="service-item">
@@ -273,12 +275,17 @@
                                     alt="logo"></a>
                         </li>
 
-                        <li class="clients-item" style="display: flex; align-items: center;">
+                        <!-- <li class="clients-item" style="display: flex; align-items: center;">
                             <a href="#" onclick="event.preventDefault();"
                                 style="display: flex; align-items: center; color: white; text-transform: uppercase; text-decoration: none;">
-                                <img src="./images/com3.png" alt="logo" style="width: 90px; margin-right: 10px; margin-top: -8px;">
-                                <p style="font-size: larger; color: rgb(94, 94, 94); margin-left: -20px; margin-top: 20px;">GAMING</p>
+                                <img src="./images/com3.png" alt="logo"
+                                    style="margin-right: 10px;">
                             </a>
+                        </li> -->
+
+                        <li class="clients-item">
+                            <a href="#" onclick="event.preventDefault();"><img src="./images/com3.png" alt="logo"
+                                    style="margin-top: 10px; margin-left: 10px; width: 85%;"></a>
                         </li>
 
                         <li class="clients-item">
@@ -288,12 +295,14 @@
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" onclick="event.preventDefault();"><img src="https://www.vispl.co.in/Images/logo.png" alt="logo"
+                            <a href="#" onclick="event.preventDefault();"><img
+                                    src="https://www.vispl.co.in/Images/logo.png" alt="logo"
                                     style="margin: 20px auto auto 15px;"></a>
                         </li>
 
                         <li class="clients-item">
-                            <a href="#" onclick="event.preventDefault();"><img src="https://www.kitchenbox.in/images/logo.png" alt="logo"
+                            <a href="#" onclick="event.preventDefault();"><img
+                                    src="https://www.kitchenbox.in/images/logo.png" alt="logo"
                                     style="width: 80px; margin: auto 40px;"></a>
                         </li>
 
