@@ -3,8 +3,8 @@
 Thank you for your interest in contributing to this project!  
 We’re a small team of two working on this portfolio:
 
+- 🧪 **Tester**: Subrat Prasad Nayak
 - 👨‍💻 **Developer**: Saswat Kumar Pradhan  
-- 🧪 **Tester**: Subrat Pr. Nayak
 
 ---
 
