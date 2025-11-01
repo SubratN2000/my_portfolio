@@ -1,5 +1,9 @@
 const qaData = [
     {
+        question: "Hi, Hii, Hello",
+        answer: "This is Subrat. Kindly specify which details you require."
+    },
+    {
         question: "What is your name?",
         answer: "My name is Subrat Prasad Nayak."
     },
@@ -12,8 +16,12 @@ const qaData = [
         answer: "I'm based in Bangalore, India."
     },
     {
+        question: "What is your residential address or current address or home address?",
+        answer: "My hometown is in Bhadrak, Odisha."
+    },
+    {
         question: "What is your contact or phone number?",
-        answer: "You can reach me at 6371773304."
+        answer: 'You can reach me at 6371773304. <a href="tel:+916371773304">Call me</a'
     },
     {
         question: "What is your email address?",
@@ -22,10 +30,6 @@ const qaData = [
     {
         question: "What is your birthday?",
         answer: "I was born on February 16, 2000."
-    },
-    {
-        question: "What is your home address?",
-        answer: "My hometown is Bhadrak, Odisha."
     },
     {
         question: "What are your hobbies?",
@@ -84,7 +88,7 @@ const qaData = [
         answer: 'Yes, check out my <a href="https://github.com/SubratN2000" target="_blank">GitHub Profile</a>'
     },
     {
-        question: "whatsapp",
+        question: "whatsapp number",
         answer: 'Message me directly on <a href="https://wa.me/+916371773304" target="_blank">WhatsApp</a>'
     }
 ];
@@ -122,4 +126,12 @@ button.addEventListener('click', (e) => {
 
     input.value = '';
     button.disabled = true;
+});
+
+// ✅ Add Enter key functionality
+input.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault(); // prevent form submission/reload
+    button.click();     // trigger the same handler as the button
+  }
 });
