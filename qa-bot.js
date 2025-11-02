@@ -13,7 +13,7 @@ const referenceText = `
     GitHub: https://github.com/SubratN2000
   `;
 
-const API_KEY = "AIzaSyDMJVmhZQPRnGF1L0qyFjESULZubbItGeM";
+const API_KEY = "AIzaSyDbsbuf3nHO-tBjeb9YAs2lH3rvU5rH8lA";
 const MODEL = "gemini-2.5-flash-lite";
 
 async function askGemini(prompt) {
@@ -123,7 +123,7 @@ button.addEventListener('click', async (e) => {
     const query = input.value.trim();
     if (!query) return;
 
-    output.textContent = "🤖 Thinking...";
+    output.innerHTML = `<div class="typing-text">🤖 Thinking...</div>`;
     const answer = await askGemini(query);
     output.innerHTML = `<div class="typing-text">${answer}</div>`;
     console.log("Answer:", answer);
